@@ -1,0 +1,10 @@
+﻿ATUALIZAÇÕES
+-------------------------------------------------------------------------------------
+DATA  - DESCRIÇÃO
+-------------------------------------------------------------------------------------
+27/04 - NO CADASTRO DE CLIENTE FOI ALTERADO O CAMPO CPF PRA DOCUMENTO
+27/04 - O CAMPO CPF FOI ALTERADO PRA DOCUMENTO NA TABELA CLIENTE
+27/04 - FOI INCLUIDO NO RODAPÉ DO RECIBO O ENDEREÇO DE ENTREGA, OBS: CASO A OPÇÃO ESTAJA TRUE NA
+        TABELA CONFIGURAÇÃO CAMPO IsEnderecoRodape
+27/04 - O NOME DO BANCO FOI ALTERADO PARA DBDelivery
+27/04 - FOI ADICIONADO DATA E HORA DO PEDIDO

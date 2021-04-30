@@ -1,0 +1,143 @@
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\Delivery.exe.config
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\Delivery.exe
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\Delivery.pdb
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\EntityFramework.dll
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\Microsoft.SqlServer.DmfSqlClrWrapper.dll
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\Microsoft.SqlServer.Management.Utility.dll
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\Microsoft.SqlServer.Management.UtilityEnum.dll
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\EntityFramework.xml
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmAbrirCaixa.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmAlterarSenhaUser.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmAutenticarUser.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmBaseEtiquetas.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmBasePrincipal.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmBaseRelatorioClientesAbertoFechado.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmBaseRelatorioMovimentacao.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmBaseRletorioGeralPedidos.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmBaseTodosLancamentos.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmBoasVindas.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmClasseLancamentos.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmCliente.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmFiltroPedidoClienteAbertoFechado.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmFiltroRelatorio.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmFiltroRelatorioMovimentacao.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmFinalizarPedido.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmFuncionario.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmLancamento.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmLoad.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmPedido.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmProduto.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmSangria.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmSubClasseLancamento.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmSuporteTecnico.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmTodasClassesLancamento.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmTodasSubClassesLancamento.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmTodosClientes.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmTodosFuncionarios.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmTodosItensPedidos.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmTodosPedidos.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.frmTodosProdutos.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.Properties.Resources.resources
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.csproj.GenerateResource.Cache
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\RdlCompile.cache
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\RdlCompile.compiled
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.exe
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.pdb
+C:\Users\LuisAntonio\Desktop\Meus Arquivos NoteBook\PROJETOS PARTICULARES\DESKTOP\Delivery_oficial\Delivery\obj\Release\Delivery.csprojResolveAssemblyReference.cache
+E:\Delivery_versao_26122017\Delivery\bin\Release\Delivery.exe.config
+E:\Delivery_versao_26122017\Delivery\bin\Release\Delivery.exe
+E:\Delivery_versao_26122017\Delivery\bin\Release\Delivery.pdb
+E:\Delivery_versao_26122017\Delivery\bin\Release\EntityFramework.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\EntityFramework.SqlServer.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.ReportViewer.Common.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.ReportViewer.WinForms.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.ConnectionInfo.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.ConnectionInfoExtended.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.Dmf.Adapters.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.Dmf.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.DmfSqlClrWrapper.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.Management.Collector.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.Management.CollectorEnum.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.Management.Utility.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.Management.UtilityEnum.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.PolicyEnum.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.RegSvrEnum.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.ServiceBrokerEnum.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.Smo.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.SmoExtended.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.SqlEnum.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.SqlWmiManagement.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.SString.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.Types.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.SqlServer.WmiEnum.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\Microsoft.AnalysisServices.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\EntityFramework.xml
+E:\Delivery_versao_26122017\Delivery\bin\Release\EntityFramework.SqlServer.xml
+E:\Delivery_versao_26122017\Delivery\bin\Release\pt\Microsoft.SqlServer.Dmf.resources.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\pt\Microsoft.SqlServer.Dmf.Adapters.resources.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\pt\Microsoft.SqlServer.Management.Collector.resources.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\pt\Microsoft.SqlServer.Management.CollectorEnum.resources.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\pt\Microsoft.SqlServer.Management.Sdk.Sfc.resources.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\pt\Microsoft.SqlServer.Management.Utility.resources.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\pt\Microsoft.SqlServer.RegSvrEnum.resources.dll
+E:\Delivery_versao_26122017\Delivery\bin\Release\pt\Microsoft.SqlServer.Types.resources.dll
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.csprojResolveAssemblyReference.cache
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmAbrirCaixa.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmAddEnderco.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmAddRestricoesAlimentares.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmAdicionarCredito.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmAlterarSenhaUser.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmAutenticarUser.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBaixarLancamento.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBaseEtiquetas.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBaseTodasSangria.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBaseMovimentacaoGeral.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBasePrincipal.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBaseRelatorioClientesAbertoFechado.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBaseRelatorioMovimentacao.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBaseRelatorioMovimentacaoCliente.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBaseRletorioGeralPedidos.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBanco.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBaseRletorioGeralPedidosProduto.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmConfiguracoesGerais.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmConsultarClientesSaldo.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmContaCorrente.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmEditarDataConsumoItemPedidoPcte.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmLoadGeral.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmMovimentacaoEntradaSaida.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmPedidoPcte.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmRelacaoCaixaAbertoFechado.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmTodosLancamentos.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmBoasVindas.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmClasseLancamentos.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmCliente.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmFiltroPedidoClienteAbertoFechado.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmFiltroRelatorio.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmFiltroRelatorioMovimentacao.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmFinalizarPedido.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmFornecedor.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmFuncionario.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmLancamento.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmLembrentesLancamentos.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmLoad.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmPedido.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmProduto.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmSangria.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmSubClasseLancamento.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmSuporteTecnico.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmTodasClassesLancamento.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmTodasSubClassesLancamento.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmTodosClientes.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmTodosFornecedores.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmTodosFuncionarios.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmTodosItensPedidos.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmTodosPedidos.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmTodosProdutos.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.frmValidarLicencaSistema.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.Properties.Resources.resources
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.csproj.GenerateResource.Cache
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.exe
+E:\Delivery_versao_26122017\Delivery\obj\Release\Delivery.pdb

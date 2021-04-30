@@ -1,0 +1,907 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{826AEA75-F97F-418E-BF1C-58B4AE172EE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Delivery</RootNamespace>
+    <AssemblyName>Delivery</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>baskey_full.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Dmf, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Dmf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Dmf.Adapters, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Dmf.Adapters.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.DmfSqlClrWrapper, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.DmfSqlClrWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Collector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Collector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.CollectorEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.CollectorEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Utility, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.UtilityEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.UtilityEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.PolicyEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.PolicyEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.RegSvrEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.RegSvrEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ServiceBrokerEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ServiceBrokerEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlWmiManagement, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SqlWmiManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SString, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SString.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.WmiEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.WmiEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataContext\MyDataContextConfiguration.cs" />
+    <Compile Include="DataSetRelatorios.cs">
+      <DependentUpon>DataSetRelatorios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetRelatorios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRelatorios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEnderco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEnderco.Designer.cs">
+      <DependentUpon>frmAddEnderco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddRestricoesAlimentares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddRestricoesAlimentares.Designer.cs">
+      <DependentUpon>frmAddRestricoesAlimentares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdicionarCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdicionarCredito.Designer.cs">
+      <DependentUpon>frmAdicionarCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlterarSenhaUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarSenhaUser.Designer.cs">
+      <DependentUpon>frmAlterarSenhaUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAutenticarUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutenticarUser.Designer.cs">
+      <DependentUpon>frmAutenticarUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbrirCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbrirCaixa.Designer.cs">
+      <DependentUpon>frmAbrirCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaixarLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaixarLancamento.Designer.cs">
+      <DependentUpon>frmBaixarLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseEtiquetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseEtiquetas.Designer.cs">
+      <DependentUpon>frmBaseEtiquetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseTodasSangria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseTodasSangria.Designer.cs">
+      <DependentUpon>frmBaseTodasSangria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseMovimentacaoGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseMovimentacaoGeral.Designer.cs">
+      <DependentUpon>frmBaseMovimentacaoGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBasePrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBasePrincipal.Designer.cs">
+      <DependentUpon>frmBasePrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseRelatorioClientesAbertoFechado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseRelatorioClientesAbertoFechado.Designer.cs">
+      <DependentUpon>frmBaseRelatorioClientesAbertoFechado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseRelatorioMovimentacaoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseRelatorioMovimentacaoCliente.Designer.cs">
+      <DependentUpon>frmBaseRelatorioMovimentacaoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseRletorioGeralPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseRletorioGeralPedidos.Designer.cs">
+      <DependentUpon>frmBaseRletorioGeralPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanco.Designer.cs">
+      <DependentUpon>frmBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseRletorioGeralPedidosProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseRletorioGeralPedidosProduto.Designer.cs">
+      <DependentUpon>frmBaseRletorioGeralPedidosProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracoesGerais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracoesGerais.Designer.cs">
+      <DependentUpon>frmConfiguracoesGerais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarClientesSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarClientesSaldo.Designer.cs">
+      <DependentUpon>frmConsultarClientesSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContaCorrente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContaCorrente.Designer.cs">
+      <DependentUpon>frmContaCorrente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalharPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalharPedido.Designer.cs">
+      <DependentUpon>frmDetalharPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarDataConsumoItemPedidoPcte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarDataConsumoItemPedidoPcte.Designer.cs">
+      <DependentUpon>frmEditarDataConsumoItemPedidoPcte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExportarDadosCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExportarDadosCliente.Designer.cs">
+      <DependentUpon>frmExportarDadosCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadGeral.Designer.cs">
+      <DependentUpon>frmLoadGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoEntradaSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoEntradaSaida.Designer.cs">
+      <DependentUpon>frmMovimentacaoEntradaSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoPcte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedidoPcte.designer.cs">
+      <DependentUpon>frmPedidoPcte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseReciboVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseReciboVenda.Designer.cs">
+      <DependentUpon>frmBaseReciboVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelacaoCaixaAbertoFechado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelacaoCaixaAbertoFechado.Designer.cs">
+      <DependentUpon>frmRelacaoCaixaAbertoFechado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodosLancamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodosLancamentos.Designer.cs">
+      <DependentUpon>frmTodosLancamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBoasVindas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBoasVindas.Designer.cs">
+      <DependentUpon>frmBoasVindas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClasseLancamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClasseLancamentos.Designer.cs">
+      <DependentUpon>frmClasseLancamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltroPedidoClienteAbertoFechado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltroPedidoClienteAbertoFechado.Designer.cs">
+      <DependentUpon>frmFiltroPedidoClienteAbertoFechado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltroRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltroRelatorio.Designer.cs">
+      <DependentUpon>frmFiltroRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltroRelatorioMovimentacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltroRelatorioMovimentacao.Designer.cs">
+      <DependentUpon>frmFiltroRelatorioMovimentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFinalizarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFinalizarPedido.Designer.cs">
+      <DependentUpon>frmFinalizarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFornecedor.Designer.cs">
+      <DependentUpon>frmFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuncionario.Designer.cs">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLancamento.Designer.cs">
+      <DependentUpon>frmLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLembrentesLancamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLembrentesLancamentos.Designer.cs">
+      <DependentUpon>frmLembrentesLancamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoad.Designer.cs">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedido.Designer.cs">
+      <DependentUpon>frmPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduto.Designer.cs">
+      <DependentUpon>frmProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSangria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSangria.Designer.cs">
+      <DependentUpon>frmSangria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubClasseLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubClasseLancamento.Designer.cs">
+      <DependentUpon>frmSubClasseLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuporteTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuporteTecnico.Designer.cs">
+      <DependentUpon>frmSuporteTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodasClassesLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodasClassesLancamento.Designer.cs">
+      <DependentUpon>frmTodasClassesLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodasSubClassesLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodasSubClassesLancamento.Designer.cs">
+      <DependentUpon>frmTodasSubClassesLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodosClientes.Designer.cs">
+      <DependentUpon>frmTodosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodosFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodosFornecedores.Designer.cs">
+      <DependentUpon>frmTodosFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodosFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodosFuncionarios.Designer.cs">
+      <DependentUpon>frmTodosFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodosItensPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodosItensPedidos.Designer.cs">
+      <DependentUpon>frmTodosItensPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodosPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodosPedidos.Designer.cs">
+      <DependentUpon>frmTodosPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodosProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodosProdutos.Designer.cs">
+      <DependentUpon>frmTodosProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValidarLicencaSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidarLicencaSistema.Designer.cs">
+      <DependentUpon>frmValidarLicencaSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Banco.cs" />
+    <Compile Include="Model\Caixa.cs" />
+    <Compile Include="Model\Categoria.cs" />
+    <Compile Include="Model\CategoriaLancamento.cs" />
+    <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\ConfiguracaoSistema.cs" />
+    <Compile Include="Model\ContaCorrente.cs" />
+    <Compile Include="Model\Empresa.cs" />
+    <Compile Include="Model\Endereco.cs" />
+    <Compile Include="Model\FormaPagamento.cs" />
+    <Compile Include="Model\Fornecedor.cs" />
+    <Compile Include="Model\Funcao.cs" />
+    <Compile Include="Model\Funcionario.cs" />
+    <Compile Include="Model\ItensPedido.cs" />
+    <Compile Include="Model\Lancamento.cs" />
+    <Compile Include="Model\LogAcesso.cs" />
+    <Compile Include="Model\MovimentacaoCliente.cs" />
+    <Compile Include="Model\MovimentacaoContaCorrente.cs" />
+    <Compile Include="Model\Operador.cs" />
+    <Compile Include="Model\Pedido.cs" />
+    <Compile Include="Model\Produto.cs" />
+    <Compile Include="Model\Restricoes.cs" />
+    <Compile Include="Model\Sangria.cs" />
+    <Compile Include="Model\Sistema.cs" />
+    <Compile Include="Model\SubCategoriaLancamento.cs" />
+    <Compile Include="Model\TipoDocumento.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaldoCliente.cs" />
+    <Compile Include="Service References\WSCorreios\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="frmAbrirCaixa.resx">
+      <DependentUpon>frmAbrirCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEnderco.resx">
+      <DependentUpon>frmAddEnderco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddRestricoesAlimentares.resx">
+      <DependentUpon>frmAddRestricoesAlimentares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdicionarCredito.resx">
+      <DependentUpon>frmAdicionarCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlterarSenhaUser.resx">
+      <DependentUpon>frmAlterarSenhaUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAutenticarUser.resx">
+      <DependentUpon>frmAutenticarUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaixarLancamento.resx">
+      <DependentUpon>frmBaixarLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseEtiquetas.resx">
+      <DependentUpon>frmBaseEtiquetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseTodasSangria.resx">
+      <DependentUpon>frmBaseTodasSangria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseMovimentacaoGeral.resx">
+      <DependentUpon>frmBaseMovimentacaoGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBasePrincipal.resx">
+      <DependentUpon>frmBasePrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseRelatorioClientesAbertoFechado.resx">
+      <DependentUpon>frmBaseRelatorioClientesAbertoFechado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseRelatorioMovimentacaoCliente.resx">
+      <DependentUpon>frmBaseRelatorioMovimentacaoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseRletorioGeralPedidos.resx">
+      <DependentUpon>frmBaseRletorioGeralPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBanco.resx">
+      <DependentUpon>frmBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseRletorioGeralPedidosProduto.resx">
+      <DependentUpon>frmBaseRletorioGeralPedidosProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracoesGerais.resx">
+      <DependentUpon>frmConfiguracoesGerais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarClientesSaldo.resx">
+      <DependentUpon>frmConsultarClientesSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContaCorrente.resx">
+      <DependentUpon>frmContaCorrente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalharPedido.resx">
+      <DependentUpon>frmDetalharPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarDataConsumoItemPedidoPcte.resx">
+      <DependentUpon>frmEditarDataConsumoItemPedidoPcte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExportarDadosCliente.resx">
+      <DependentUpon>frmExportarDadosCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadGeral.resx">
+      <DependentUpon>frmLoadGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoEntradaSaida.resx">
+      <DependentUpon>frmMovimentacaoEntradaSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidoPcte.resx">
+      <DependentUpon>frmPedidoPcte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseReciboVenda.resx">
+      <DependentUpon>frmBaseReciboVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelacaoCaixaAbertoFechado.resx">
+      <DependentUpon>frmRelacaoCaixaAbertoFechado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodosLancamentos.resx">
+      <DependentUpon>frmTodosLancamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBoasVindas.resx">
+      <DependentUpon>frmBoasVindas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClasseLancamentos.resx">
+      <DependentUpon>frmClasseLancamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltroPedidoClienteAbertoFechado.resx">
+      <DependentUpon>frmFiltroPedidoClienteAbertoFechado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltroRelatorio.resx">
+      <DependentUpon>frmFiltroRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltroRelatorioMovimentacao.resx">
+      <DependentUpon>frmFiltroRelatorioMovimentacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFinalizarPedido.resx">
+      <DependentUpon>frmFinalizarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFornecedor.resx">
+      <DependentUpon>frmFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuncionario.resx">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLancamento.resx">
+      <DependentUpon>frmLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLembrentesLancamentos.resx">
+      <DependentUpon>frmLembrentesLancamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoad.resx">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedido.resx">
+      <DependentUpon>frmPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduto.resx">
+      <DependentUpon>frmProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSangria.resx">
+      <DependentUpon>frmSangria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubClasseLancamento.resx">
+      <DependentUpon>frmSubClasseLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuporteTecnico.resx">
+      <DependentUpon>frmSuporteTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodasClassesLancamento.resx">
+      <DependentUpon>frmTodasClassesLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodasSubClassesLancamento.resx">
+      <DependentUpon>frmTodasSubClassesLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodosClientes.resx">
+      <DependentUpon>frmTodosClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodosFornecedores.resx">
+      <DependentUpon>frmTodosFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodosFuncionarios.resx">
+      <DependentUpon>frmTodosFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodosItensPedidos.resx">
+      <DependentUpon>frmTodosItensPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodosPedidos.resx">
+      <DependentUpon>frmTodosPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodosProdutos.resx">
+      <DependentUpon>frmTodosProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValidarLicencaSistema.resx">
+      <DependentUpon>frmValidarLicencaSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportReciboVenda.rdlc" />
+    <EmbeddedResource Include="ReportEtiqueta.rdlc" />
+    <EmbeddedResource Include="ReportMovimentacao.rdlc" />
+    <EmbeddedResource Include="ReportMovimentacaoSaldoCliente.rdlc" />
+    <EmbeddedResource Include="ReportPedidosAbertosCliente.rdlc" />
+    <EmbeddedResource Include="ReportPedidosGeral.rdlc" />
+    <EmbeddedResource Include="ReportVendasProduto.rdlc" />
+    <None Include="DataSetRelatorios.xsc">
+      <DependentUpon>DataSetRelatorios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRelatorios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRelatorios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetRelatorios.xss">
+      <DependentUpon>DataSetRelatorios.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\WSCorreios\AtendeClienteService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="baskey_full.ico" />
+    <Content Include="Leia_Me.txt" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.assuntoPIMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.atualizaPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.bloquearObjetoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.buscaClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.buscaContratoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.buscaPagamentoEntregaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.buscaServicosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.cancelarObjetoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.cancelarPedidoScolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.clienteERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.consultaCEPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.consultarPedidosInformacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.consultaSROResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.contratoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.embalagemLRSMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.enderecoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.fechaPlpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.fechaPlpVariosServicosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.geraDigitoVerificadorEtiquetasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.getStatusCartaoPostagemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.getStatusPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.integrarUsuarioScolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.mensagemRetornoPIMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.motivoPIMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.obterAssuntosPIResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.obterClienteAtualizacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.obterEmbalagemLRSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.obterMensagemRetornoPIResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.obterMotivosPIResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.registrarPedidosInformacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.retorno.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.retornoCancelamentoTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.servicoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.solicitaEtiquetasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.solicitaPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.solicitarPostagemScolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.solicitaXmlPlpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.statusCartao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.statusPlp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.validaEtiquetaPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.validaPlpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.validarPostagemReversaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.validarPostagemSimultaneaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Delivery.WSCorreios.verificaDisponibilidadeServicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSCorreios\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WSCorreios\configuration.svcinfo" />
+    <None Include="Service References\WSCorreios\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WSCorreios\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
