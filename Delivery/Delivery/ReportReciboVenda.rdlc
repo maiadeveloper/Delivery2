@@ -1601,7 +1601,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Complemento:</Value>
+                        <Value>Complemento:  </Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -1728,7 +1728,7 @@
             </Paragraphs>
             <rd:DefaultName>celular</rd:DefaultName>
             <Top>2.75908cm</Top>
-            <Left>4.40478cm</Left>
+            <Left>4.50003cm</Left>
             <Height>0.41049cm</Height>
             <Width>3.09514cm</Width>
             <ZIndex>30</ZIndex>

@@ -4,31 +4,30 @@
 Razão Social: Grécia Gastronomia
 CNPJ: 00.000.000/0000-00
 ---------------------------------------------
-Nº.Pedido: 0004 Data:29/04/2021 Hora:10:54:31  
-Cliente - Documento: 850.650.992-00
-LUIS ANTONIO OLIVEIRA MAIA
-Celular: (69) 99271-8454
+Nº.Pedido: 0020 Data:29/04/2021 Hora:18:26:45  
+Cliente - Documento: 850.656.666-66
+MARGARIDA ALVES DE OLIVEIRA
+Celular: (69) 92718-5455
 ---------------------------------------------
 Entregador: LUCAS BRUNO BARRETO SILVA
 ---------------------------------------------
-Forma de Pag: PIX
+Forma de Pag: DINHEIRO
 ---------------------------------------------
 [Cod] [Produto]      [Qtde] [Preço] [Total]
 ---------------------------------------------
- 1    MARMITA FIT                   5        R$ 25,00        R$ 125,00
- 2    SUCO VERDE DE ABACAXI COM MENTA                   5        R$ 6,00        R$ 30,00
- 3    MARMITA MAROMBA                   5        R$ 30,00        R$ 150,00
- 4    ESCONDINHO DE CARNE SECA                   5        R$ 18,00        R$ 90,00
+ 1    MARMITA FIT                   1        R$ 25,00        R$ 25,00
+ 2    SUCO VERDE DE ABACAXI COM MENTA                   2        R$ 6,00        R$ 12,00
+ 4    ESCONDINHO DE CARNE SECA                   1        R$ 18,00        R$ 18,00
 
 ---------------------------------------------
-TOTAL PEDIDO....................  :  R$ 395,00
-TAXA DE ENTREGA (+).....  :  R$ 0,00
-DESCONTO (-).....................  :  R$ 0,00
-TOTAL A PAGAR..................  :  R$ 395,00
-PAGANDO............................  :  R$ 395,00
+TOTAL PEDIDO....................  :  R$ 55,00
+TAXA DE ENTREGA (+).....  :  R$ 12,00
+DESCONTO (-).....................  :  R$ 3,00
+TOTAL A PAGAR..................  :  R$ 64,00
+PAGANDO............................  :  R$ 64,00
 TROCO................................... :  R$ 0,00
 _____________________________________________
 
-      Porto Velho - Ro: 29/04/2021 22:41:42
+   Porto Velho - Ro: 29/04/2021 23:12:13
         *Não possui valor fiscal        
 ---------------------------------------------
