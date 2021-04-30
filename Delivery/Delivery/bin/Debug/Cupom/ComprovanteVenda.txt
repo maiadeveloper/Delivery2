@@ -4,30 +4,35 @@
 Razão Social: Grécia Gastronomia
 CNPJ: 00.000.000/0000-00
 ---------------------------------------------
-Nº.Pedido: 0020 Data:29/04/2021 Hora:18:26:45  
+Nº.Pedido: 0026 Data:30/04/2021 Hora:13:22:28  
 Cliente - Documento: 850.656.666-66
 MARGARIDA ALVES DE OLIVEIRA
 Celular: (69) 92718-5455
 ---------------------------------------------
 Entregador: LUCAS BRUNO BARRETO SILVA
 ---------------------------------------------
-Forma de Pag: DINHEIRO
+Forma de Pag: PIC PAY
 ---------------------------------------------
 [Cod] [Produto]      [Qtde] [Preço] [Total]
 ---------------------------------------------
  1    MARMITA FIT                   1        R$ 25,00        R$ 25,00
- 2    SUCO VERDE DE ABACAXI COM MENTA                   2        R$ 6,00        R$ 12,00
- 4    ESCONDINHO DE CARNE SECA                   1        R$ 18,00        R$ 18,00
+ 2    SUCO VERDE DE ABACAXI COM MENTA                   1        R$ 6,00        R$ 6,00
 
 ---------------------------------------------
-TOTAL PEDIDO....................  :  R$ 55,00
-TAXA DE ENTREGA (+).....  :  R$ 12,00
-DESCONTO (-).....................  :  R$ 3,00
-TOTAL A PAGAR..................  :  R$ 64,00
-PAGANDO............................  :  R$ 64,00
+TOTAL PEDIDO....................  :  R$ 31,00
+TAXA DE ENTREGA (+).....  :  R$ 0,00
+DESCONTO (-).....................  :  R$ 0,00
+TOTAL A PAGAR..................  :  R$ 31,00
+PAGANDO............................  :  R$ 31,00
 TROCO................................... :  R$ 0,00
 _____________________________________________
+Endereço para entrega:
+ 
+Bairro: COHAB FLORESTA
+Rua: PAPIRO  Nº: 3145
+Complemento: CASA
+_____________________________________________
 
-   Porto Velho - Ro: 29/04/2021 23:12:13
+   Porto Velho - Ro: 30/04/2021 13:23:20
         *Não possui valor fiscal        
 ---------------------------------------------

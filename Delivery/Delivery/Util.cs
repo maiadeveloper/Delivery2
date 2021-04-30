@@ -581,14 +581,14 @@ namespace Delivery
             int major = 3;
 
             //versão Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade, e
-            int minor = 9;
+            int minor = 10;
 
             //versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
-            int patch = 13;
+            int patch = 14;
 
             sistema.VersaoBuild = major.ToString() + "." + minor.ToString() + "." + patch.ToString();
 
-            sistema.DataBuild = Convert.ToDateTime("29-04-2021");
+            sistema.DataBuild = Convert.ToDateTime("30-04-2021");
 
             return string.Format("Última atualização: {0} | Versão: {1} ", sistema.DataBuild.ToString("dd/MM/yyyy"), sistema.VersaoBuild);
         }
@@ -730,7 +730,9 @@ namespace Delivery
 
                     string nomeCliente = codigoCliente == null ? "VENDA AVULSA" : cliente.Nome;
 
-                    string documentoCliente = codigoCliente == null ? "VENDA AVULSA" : cliente.Documento;
+                    string documentoCliente = codigoCliente == null ? "" : cliente.Documento;
+
+                    string celular = codigoCliente == null ? "" : cliente.Celular;
 
                     string nomeEntregador = codigoCliente == null ? string.Empty : pedido.Funcionario.Nome;
 
@@ -752,7 +754,7 @@ namespace Delivery
                                  "Nº.Pedido: " + AdicionaZero(pedido.PedidoId.ToString()) + " Data:" + data.ToString("dd/MM/yyyy") + " Hora:" + pedido.Hora,
                                  "Cliente - Documento: " +documentoCliente,
                                  "" + nomeCliente,
-                                 "Celular: " + cliente.Celular,
+                                 "Celular: " + celular,
                                  "---------------------------------------------",
                                  "Entregador: " + nomeEntregador,
                                  "---------------------------------------------",
@@ -770,7 +772,7 @@ namespace Delivery
                                  "TROCO................................... :  R$ " + Convert.ToDecimal(valorTroco).ToString("N2"),
                                  "_____________________________________________",
                                  IncluirEnderecoEntrega(endereco),
-                                 "   Porto Velho - Ro: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+                                 "    Porto Velho - Ro: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
                                  "        *Não possui valor fiscal        ",
                                  "---------------------------------------------",
                              };
@@ -784,7 +786,7 @@ namespace Delivery
         {
             StringBuilder sb = new StringBuilder();
 
-            if (IsIncluirEnderecoEntrega())
+            if (IsIncluirEnderecoEntrega() && endereco != null)
             {
                 sb.AppendLine("Endereço para entrega:");
                 sb.AppendLine(" ");

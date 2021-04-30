@@ -29,5 +29,13 @@ namespace Delivery
                 this.Close();
             }
         }
+
+        private void frmSuporteTecnico_Load(object sender, EventArgs e)
+        {
+            txtSobre.Text = $"Aviso:  este programa de computador é protegido  por leis de direitos autorais e tratatos internacionais. " +
+                            $"A reprodução ou distribuição  não-autorizada  desde programa , ou qualquer parte dele, poderá " +
+                            $"resultar em severas punições civis e criminais, e os infratores serão punidos dentro " +
+                            $"do máximo rigor  permitido  por lei. {Util.CarregaBuildSistema()}";
+        }
     }
 }

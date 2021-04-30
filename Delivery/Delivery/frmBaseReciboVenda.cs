@@ -71,7 +71,7 @@ namespace Delivery
                 this.reportViewer1.LocalReport.SetParameters(new ReportParameter("clienteDocumento", pedido.ClienteId == null ? "" : pedido.Cliente.Documento));
                 this.reportViewer1.LocalReport.SetParameters(new ReportParameter("entregador", pedido.Funcionario.Nome));
                 this.reportViewer1.LocalReport.SetParameters(new ReportParameter("formaPgto", pedido.FormaPagamento.Nome));
-                this.reportViewer1.LocalReport.SetParameters(new ReportParameter("celular", pedido.Cliente.Celular));
+                this.reportViewer1.LocalReport.SetParameters(new ReportParameter("celular", pedido.ClienteId == null ? "" : pedido.Cliente.Celular));
 
                 //Endereço cliente
                 this.reportViewer1.LocalReport.SetParameters(new ReportParameter("bairro", endereco == null ? "" : endereco.Bairro));

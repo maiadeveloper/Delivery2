@@ -35,7 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSobre = new System.Windows.Forms.TextBox();
             this.pPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -94,7 +94,7 @@
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtSobre);
             this.panel2.Location = new System.Drawing.Point(13, 45);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(632, 283);
@@ -115,19 +115,18 @@
             this.textBox2.Text = "Suporte Técnico!\r\n\r\nContato: Luis Antonio Oliveira Maia\r\nTelefone: (69) 9271-8454" +
     "\r\nE-Mail: analista@luismaia.com.br/suporte@luismaia.com.br";
             // 
-            // textBox1
+            // txtSobre
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(7, 7);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(616, 132);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.txtSobre.BackColor = System.Drawing.Color.White;
+            this.txtSobre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSobre.Enabled = false;
+            this.txtSobre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSobre.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtSobre.Location = new System.Drawing.Point(7, 7);
+            this.txtSobre.Multiline = true;
+            this.txtSobre.Name = "txtSobre";
+            this.txtSobre.Size = new System.Drawing.Size(616, 132);
+            this.txtSobre.TabIndex = 7;
             // 
             // frmSuporteTecnico
             // 
@@ -142,6 +141,7 @@
             this.Name = "frmSuporteTecnico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sobre  o sistema ";
+            this.Load += new System.EventHandler(this.frmSuporteTecnico_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmSuporteTecnico_KeyDown);
             this.pPrincipal.ResumeLayout(false);
             this.pPrincipal.PerformLayout();
@@ -160,6 +160,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSobre;
     }
 }
