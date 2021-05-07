@@ -585,6 +585,7 @@ namespace Delivery
                     txtFuncionarioEntregador.SelectedItem = pedido.FuncionarioId.ToString();
                     codigoCliente = pedido.ClienteId;
                     txtCodigo.Text = pedido.ClienteId.ToString();
+                    txtHoraPedido.Text = pedido.Hora;
                     txtDataVenda.Text = pedido.Data.ToString("dd/MM/yyyy");
                     txtCelular.Text = pedido.ClienteId != null ? pedido.Cliente.Celular : string.Empty;
                     txtCPF.Text = pedido.ClienteId != null ? pedido.Cliente.Documento : string.Empty;

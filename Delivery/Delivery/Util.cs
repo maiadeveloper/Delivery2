@@ -584,11 +584,11 @@ namespace Delivery
             int minor = 10;
 
             //versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
-            int patch = 14;
+            int patch = 15;
 
             sistema.VersaoBuild = major.ToString() + "." + minor.ToString() + "." + patch.ToString();
 
-            sistema.DataBuild = Convert.ToDateTime("30-04-2021");
+            sistema.DataBuild = Convert.ToDateTime("07-05-2021");
 
             return string.Format("Última atualização: {0} | Versão: {1} ", sistema.DataBuild.ToString("dd/MM/yyyy"), sistema.VersaoBuild);
         }
@@ -752,14 +752,14 @@ namespace Delivery
                                  "CNPJ: " + Util.FormatarDocumento("cnpj", empresa.CNPJ),
                                  "---------------------------------------------",
                                  "Nº.Pedido: " + AdicionaZero(pedido.PedidoId.ToString()) + " Data:" + data.ToString("dd/MM/yyyy") + " Hora:" + pedido.Hora,
+                                 "Forma de Pag: " + pedido.FormaPagamento.Nome,
                                  "Cliente - Documento: " +documentoCliente,
                                  "" + nomeCliente,
                                  "Celular: " + celular,
+                                 IncluirEnderecoEntrega(endereco),
                                  "---------------------------------------------",
                                  "Entregador: " + nomeEntregador,
-                                 "---------------------------------------------",
-                                 "Forma de Pag: " + pedido.FormaPagamento.Nome,
-                                 "---------------------------------------------",
+                                 "=============================================",
                                  "[Cod] [Produto]      [Qtde] [Preço] [Total]",
                                  "---------------------------------------------",
                                  IncluirItens(codigoPedido, pedido.IsPcte),
@@ -770,8 +770,7 @@ namespace Delivery
                                  "TOTAL A PAGAR..................  :  R$ " +   Convert.ToDecimal(pedido.VlrTotalFinal).ToString("N2"),
                                  "PAGANDO............................  :  R$ "  + Convert.ToDecimal(valorPagamento).ToString("N2"),
                                  "TROCO................................... :  R$ " + Convert.ToDecimal(valorTroco).ToString("N2"),
-                                 "_____________________________________________",
-                                 IncluirEnderecoEntrega(endereco),
+                                 "---------------------------------------------",
                                  "    Porto Velho - Ro: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
                                  "        *Não possui valor fiscal        ",
                                  "---------------------------------------------",
@@ -788,12 +787,12 @@ namespace Delivery
 
             if (IsIncluirEnderecoEntrega() && endereco != null)
             {
+                sb.AppendLine("--------------------------------------------");
                 sb.AppendLine("Endereço para entrega:");
                 sb.AppendLine(" ");
                 sb.AppendLine("Bairro: " + endereco.Bairro);
                 sb.AppendLine("Rua: " + endereco.Rua + "  Nº: " + endereco.Numero);
                 sb.AppendLine("Complemento: " + endereco.Complemento);
-                sb.AppendLine("_____________________________________________");
             }
 
             return sb.ToString();
@@ -829,7 +828,7 @@ namespace Delivery
 
                         if (cod != item.ProdutoId.ToString())
                         {
-                            sb.AppendLine(" " + item.ProdutoId.ToString() + "    " + produto + "                   " + qtde + "        " + preco + "        " + total);
+                            sb.AppendLine(" " + item.ProdutoId.ToString() + "    " + produto + "              " + qtde + "        " + preco + "        " + total);
                         }
 
                         cod = item.ProdutoId.ToString();
@@ -843,7 +842,7 @@ namespace Delivery
                         qtde = item.Qtde.ToString();
                         preco = item.VlrUnitario.ToString("C");
                         total = (Convert.ToDecimal(item.VlrUnitario) * Convert.ToInt32(qtde)).ToString("C");
-                        sb.AppendLine(" " + item.ProdutoId.ToString() + "    " + produto + "                   " + qtde + "        " + preco + "        " + total);
+                        sb.AppendLine(" " + item.ProdutoId.ToString() + "    " + produto + "              " + qtde + "        " + preco + "        " + total);
                     }
                 }
                 return sb.ToString();

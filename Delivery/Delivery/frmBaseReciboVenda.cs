@@ -93,9 +93,5 @@ namespace Delivery
                 this.reportViewer1.RefreshReport();
             }
         }
-
-        private void frmBaseReciboVenda_Load(object sender, EventArgs e)
-        {
-        }
     }
 }

@@ -4,35 +4,35 @@
 Razão Social: Grécia Gastronomia
 CNPJ: 00.000.000/0000-00
 ---------------------------------------------
-Nº.Pedido: 0026 Data:30/04/2021 Hora:13:22:28  
-Cliente - Documento: 850.656.666-66
-MARGARIDA ALVES DE OLIVEIRA
-Celular: (69) 92718-5455
----------------------------------------------
-Entregador: LUCAS BRUNO BARRETO SILVA
----------------------------------------------
-Forma de Pag: PIC PAY
----------------------------------------------
-[Cod] [Produto]      [Qtde] [Preço] [Total]
----------------------------------------------
- 1    MARMITA FIT                   1        R$ 25,00        R$ 25,00
- 2    SUCO VERDE DE ABACAXI COM MENTA                   1        R$ 6,00        R$ 6,00
-
----------------------------------------------
-TOTAL PEDIDO....................  :  R$ 31,00
-TAXA DE ENTREGA (+).....  :  R$ 0,00
-DESCONTO (-).....................  :  R$ 0,00
-TOTAL A PAGAR..................  :  R$ 31,00
-PAGANDO............................  :  R$ 31,00
-TROCO................................... :  R$ 0,00
-_____________________________________________
+Nº.Pedido: 0027 Data:07/05/2021 Hora:          
+Forma de Pag: DINHEIRO
+Cliente - Documento: 850.650.992-00
+LUIS ANTONIO OLIVEIRA MAIA
+Celular: (69) 99271-8454
+--------------------------------------------
 Endereço para entrega:
  
-Bairro: COHAB FLORESTA
+Bairro: COHAB
 Rua: PAPIRO  Nº: 3145
 Complemento: CASA
-_____________________________________________
 
-   Porto Velho - Ro: 30/04/2021 13:23:20
+---------------------------------------------
+Entregador: LUCAS BRUNO BARRETO SILVA
+=============================================
+[Cod] [Produto]      [Qtde] [Preço] [Total]
+---------------------------------------------
+ 1    MARMITA FIT              1        R$ 25,00        R$ 25,00
+ 2    SUCO VERDE DE ABACAXI COM MENTA              1        R$ 6,00        R$ 6,00
+ 3    MARMITA MAROMBA              1        R$ 30,00        R$ 30,00
+
+---------------------------------------------
+TOTAL PEDIDO....................  :  R$ 61,00
+TAXA DE ENTREGA (+).....  :  R$ 0,00
+DESCONTO (-).....................  :  R$ 0,00
+TOTAL A PAGAR..................  :  R$ 61,00
+PAGANDO............................  :  R$ 61,00
+TROCO................................... :  R$ 0,00
+---------------------------------------------
+    Porto Velho - Ro: 07/05/2021 16:20:47
         *Não possui valor fiscal        
 ---------------------------------------------

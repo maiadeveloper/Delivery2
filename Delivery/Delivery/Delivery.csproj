@@ -215,6 +215,12 @@
     <Compile Include="frmBaseEtiquetas.Designer.cs">
       <DependentUpon>frmBaseEtiquetas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBaseEtiquetaCozinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseEtiquetaCozinha.Designer.cs">
+      <DependentUpon>frmBaseEtiquetaCozinha.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBaseTodasSangria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -552,6 +558,9 @@
     <EmbeddedResource Include="frmBaseEtiquetas.resx">
       <DependentUpon>frmBaseEtiquetas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseEtiquetaCozinha.resx">
+      <DependentUpon>frmBaseEtiquetaCozinha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBaseTodasSangria.resx">
       <DependentUpon>frmBaseTodasSangria.cs</DependentUpon>
     </EmbeddedResource>
@@ -700,6 +709,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportEtiquetaPedido.rdlc" />
     <EmbeddedResource Include="ReportReciboVenda.rdlc" />
     <EmbeddedResource Include="ReportEtiqueta.rdlc" />
     <EmbeddedResource Include="ReportMovimentacao.rdlc" />

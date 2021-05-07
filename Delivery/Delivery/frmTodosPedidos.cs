@@ -727,5 +727,17 @@ namespace Delivery
             }
             CarregaListagemPedidos();
         }
+
+        private void enviarParaCozinhaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lwPedidos.Items.Count > 0)
+            {
+                pedidoId = int.Parse(lwPedidos.FocusedItem.SubItems[1].Text);
+
+                frmBaseEtiquetaCozinha frm = new frmBaseEtiquetaCozinha();
+                frm.CarregaEtiquetaCozinha(pedidoId);
+                frm.ShowDialog();
+            }
+        }
     }
 }

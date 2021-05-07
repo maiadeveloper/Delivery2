@@ -8273,7 +8273,6 @@ C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\bin\Debug\pt\Microsof
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.csprojAssemblyReference.cache
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.frmAbrirCaixa.resources
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.frmAddEnderco.resources
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.frmAddRestricoesAlimentares.resources
@@ -8336,3 +8335,5 @@ C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.cs
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.csproj.CopyComplete
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.exe
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.pdb
+C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.frmBaseEtiquetaCozinha.resources
+C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.csprojAssemblyReference.cache

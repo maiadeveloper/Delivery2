@@ -64,6 +64,7 @@
             this.colunaPacote = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colunaId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colunaData = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colunaHora = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colunaCPF = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colunaNome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colunaItemPedido = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -84,10 +85,10 @@
             this.ativarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desativarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.enviarParaCozinhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.colunaHora = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -593,6 +594,12 @@
             this.colunaData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colunaData.Width = 110;
             // 
+            // colunaHora
+            // 
+            this.colunaHora.Text = "Hora Pedido";
+            this.colunaHora.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colunaHora.Width = 95;
+            // 
             // colunaCPF
             // 
             this.colunaCPF.Text = "Documento";
@@ -657,9 +664,10 @@
             this.fecharPedidoToolStripMenuItem,
             this.detalharPedidoToolStripMenuItem,
             this.pausarEntregasToolStripMenuItem,
-            this.editarPedidoToolStripMenuItem});
+            this.editarPedidoToolStripMenuItem,
+            this.enviarParaCozinhaToolStripMenuItem});
             this.ctmenuStrip.Name = "ctmenuStrip";
-            this.ctmenuStrip.Size = new System.Drawing.Size(265, 148);
+            this.ctmenuStrip.Size = new System.Drawing.Size(265, 194);
             // 
             // ctmenuItemExcluir
             // 
@@ -717,7 +725,7 @@
             // 
             this.ativarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ativarToolStripMenuItem.Image")));
             this.ativarToolStripMenuItem.Name = "ativarToolStripMenuItem";
-            this.ativarToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.ativarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.ativarToolStripMenuItem.Text = "Ativar";
             this.ativarToolStripMenuItem.Click += new System.EventHandler(this.ativarToolStripMenuItem_Click);
             // 
@@ -725,7 +733,7 @@
             // 
             this.desativarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("desativarToolStripMenuItem.Image")));
             this.desativarToolStripMenuItem.Name = "desativarToolStripMenuItem";
-            this.desativarToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.desativarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.desativarToolStripMenuItem.Text = "Desativar";
             this.desativarToolStripMenuItem.Click += new System.EventHandler(this.desativarToolStripMenuItem_Click);
             // 
@@ -736,6 +744,15 @@
             this.editarPedidoToolStripMenuItem.Size = new System.Drawing.Size(264, 24);
             this.editarPedidoToolStripMenuItem.Text = "Editar Pedido";
             this.editarPedidoToolStripMenuItem.Click += new System.EventHandler(this.editarPedidoToolStripMenuItem_Click);
+            // 
+            // enviarParaCozinhaToolStripMenuItem
+            // 
+            this.enviarParaCozinhaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("enviarParaCozinhaToolStripMenuItem.Image")));
+            this.enviarParaCozinhaToolStripMenuItem.Name = "enviarParaCozinhaToolStripMenuItem";
+            this.enviarParaCozinhaToolStripMenuItem.Size = new System.Drawing.Size(264, 24);
+            this.enviarParaCozinhaToolStripMenuItem.Text = "Enviar para cozinha";
+            this.enviarParaCozinhaToolStripMenuItem.Visible = false;
+            this.enviarParaCozinhaToolStripMenuItem.Click += new System.EventHandler(this.enviarParaCozinhaToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -766,12 +783,6 @@
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "677-mortar-pestle.png");
-            // 
-            // colunaHora
-            // 
-            this.colunaHora.Text = "Hora Pedido";
-            this.colunaHora.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colunaHora.Width = 95;
             // 
             // frmTodosPedidos
             // 
@@ -859,5 +870,6 @@
         private System.Windows.Forms.ToolStripMenuItem visualizarReciboToolStripMenuItem;
         private System.Windows.Forms.CheckBox ckBoxSomenteBloqueado;
         private System.Windows.Forms.ColumnHeader colunaHora;
+        private System.Windows.Forms.ToolStripMenuItem enviarParaCozinhaToolStripMenuItem;
     }
 }
