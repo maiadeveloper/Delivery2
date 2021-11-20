@@ -104,18 +104,29 @@ namespace Delivery
 
                 if (situacao.Equals("Todos"))
                 {
-                    var lista = db.Pedidos.Where(p => p.Data >= dtInicial && p.Data <= dtFinal && p.IsExcluir == false && p.IsBloquearEntrega == isSomenteBloqueado && p.Cliente.Nome.Contains(txtParametroBusca.Text) || p.ClienteId == null && p.IsExcluir == false).OrderBy(p => p.Data).ToList();
+                    var lista = db.Pedidos.Where(p => p.Data >= dtInicial && p.Data <= dtFinal 
+                                                                          && p.IsExcluir == false 
+                                                                          && p.IsBloquearEntrega == isSomenteBloqueado 
+                                                                          && p.Cliente.Nome.Contains(txtParametroBusca.Text) || p.ClienteId == null && p.IsExcluir == false).OrderBy(p => p.Data).ToList();
                     pedidos = lista;
                 }
                 else if (situacao.Equals("pacote"))
                 {
-                    var lista = db.Pedidos.Where(p => p.Data >= dtInicial && p.Data <= dtFinal && p.IsExcluir == false && p.IsBloquearEntrega == isSomenteBloqueado && p.IsPcte == true && p.Cliente.Nome.Contains(txtParametroBusca.Text) || p.ClienteId == null && p.IsExcluir == false).OrderBy(p => p.Data).ToList();
+                    var lista = db.Pedidos.Where(p => p.Data >= dtInicial && p.Data <= dtFinal 
+                                                                          && p.IsExcluir == false 
+                                                                          && p.IsBloquearEntrega == isSomenteBloqueado 
+                                                                          && p.IsPcte == true 
+                                                                          && p.Cliente.Nome.Contains(txtParametroBusca.Text) || p.ClienteId == null && p.IsExcluir == false).OrderBy(p => p.Data).ToList();
                     pedidos = lista;
 
                 }
                 else if (situacao != "Todos")
                 {
-                    var lista = db.Pedidos.Where(p => p.Data >= dtInicial && p.Data <= dtFinal && p.IsExcluir == false && p.IsBloquearEntrega == isSomenteBloqueado && p.Cliente.Nome.Contains(txtParametroBusca.Text) && p.Situacao.Equals(situacao) || p.ClienteId == null && p.IsExcluir == false).OrderBy(p => p.Data).ToList();
+                    var lista = db.Pedidos.Where(p => p.Data >= dtInicial && p.Data <= dtFinal 
+                                                                          && p.IsExcluir == false 
+                                                                          && p.IsBloquearEntrega == isSomenteBloqueado 
+                                                                          && p.Cliente.Nome.Contains(txtParametroBusca.Text) 
+                                                                          && p.Situacao.Equals(situacao) || p.ClienteId == null && p.IsExcluir == false).OrderBy(p => p.Data).ToList();
                     pedidos = lista;
 
                 }

@@ -366,12 +366,12 @@ namespace Delivery
             {
                 if (txtSituacaoPedido.Text.Equals("pago"))
                 {
-                    ForeColor = System.Drawing.Color.Green;
+                    txtSituacaoPedido.ForeColor = System.Drawing.Color.Green;
                     txtSituacaoPedido.ForeColor = System.Drawing.Color.Green;
                 }
                 else
                 {
-                    ForeColor = System.Drawing.Color.Red;
+                    txtSituacaoPedido.ForeColor = System.Drawing.Color.Red;
                     txtSituacaoPedido.ForeColor = System.Drawing.Color.Red;
                 }
 

@@ -584,11 +584,11 @@ namespace Delivery
             int minor = 10;
 
             //versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
-            int patch = 15;
+            int patch = 17;
 
             sistema.VersaoBuild = major.ToString() + "." + minor.ToString() + "." + patch.ToString();
 
-            sistema.DataBuild = Convert.ToDateTime("07-05-2021");
+            sistema.DataBuild = Convert.ToDateTime("20-11-2021");
 
             return string.Format("Última atualização: {0} | Versão: {1} ", sistema.DataBuild.ToString("dd/MM/yyyy"), sistema.VersaoBuild);
         }
@@ -768,7 +768,7 @@ namespace Delivery
                                  "TAXA DE ENTREGA (+).....  :  R$ " + Convert.ToDecimal(pedido.TaxaEntrega).ToString("N2"),
                                  "DESCONTO (-).....................  :  R$ " + Convert.ToDecimal(pedido.VlrDesconto).ToString("N2"),
                                  "TOTAL A PAGAR..................  :  R$ " +   Convert.ToDecimal(pedido.VlrTotalFinal).ToString("N2"),
-                                 "PAGANDO............................  :  R$ "  + Convert.ToDecimal(valorPagamento).ToString("N2"),
+                                 //"PAGANDO............................  :  R$ "  + Convert.ToDecimal(valorPagamento).ToString("N2"),
                                  "TROCO................................... :  R$ " + Convert.ToDecimal(valorTroco).ToString("N2"),
                                  "---------------------------------------------",
                                  "    Porto Velho - Ro: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),

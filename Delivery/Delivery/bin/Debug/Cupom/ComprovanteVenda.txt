@@ -4,34 +4,32 @@
 Razão Social: Grécia Gastronomia
 CNPJ: 00.000.000/0000-00
 ---------------------------------------------
-Nº.Pedido: 0029 Data:15/05/2021 Hora:12:24:40  
-Forma de Pag: PIC PAY
-Cliente - Documento: 850.650.992-00
-LUIS ANTONIO OLIVEIRA MAIA
-Celular: (69) 99271-8454
+Nº.Pedido: 0042 Data:20/11/2021 Hora:11:44:43  
+Forma de Pag: DINHEIRO
+Cliente - Documento: 000.171.362-02
+NATALIA ANDRADE DOS SANTOS
+Celular: (99) 99999-9999
 --------------------------------------------
 Endereço para entrega:
  
-Bairro: COHAB FLORESTA
-Rua: ROSAS  Nº: 3400
-Complemento: LOJA
+Bairro: COHAB
+Rua: PAPIRO  Nº: 310
+Complemento: CASA
 
 ---------------------------------------------
 Entregador: LUCAS BRUNO BARRETO SILVA
 =============================================
 [Cod] [Produto]      [Qtde] [Preço] [Total]
 ---------------------------------------------
- 1    MARMITA FIT              1        R$ 25,00        R$ 25,00
- 3    MARMITA MAROMBA              1        R$ 30,00        R$ 30,00
+ 2    SUCO VERDE DE ABACAXI COM MENTA              1        R$ 6,00        R$ 6,00
 
 ---------------------------------------------
-TOTAL PEDIDO....................  :  R$ 55,00
+TOTAL PEDIDO....................  :  R$ 6,00
 TAXA DE ENTREGA (+).....  :  R$ 0,00
 DESCONTO (-).....................  :  R$ 0,00
-TOTAL A PAGAR..................  :  R$ 55,00
-PAGANDO............................  :  R$ 55,00
-TROCO................................... :  R$ 0,00
+TOTAL A PAGAR..................  :  R$ 6,00
+TROCO................................... :  R$ 4,00
 ---------------------------------------------
-    Porto Velho - Ro: 15/05/2021 12:29:35
+    Porto Velho - Ro: 20/11/2021 11:45:31
         *Não possui valor fiscal        
 ---------------------------------------------

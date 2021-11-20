@@ -8336,4 +8336,4 @@ C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.cs
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.exe
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.pdb
 C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.frmBaseEtiquetaCozinha.resources
-C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.csprojAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Delivery2\Delivery\Delivery\obj\Debug\Delivery.csproj.AssemblyReference.cache
